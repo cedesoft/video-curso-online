@@ -1,0 +1,81 @@
+.navimage {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+.navbtn{
+    width: 50px;
+    height: 40px;
+    background-color: #116597;
+    color: white;
+}
+.navimage2{
+    width: 30px;
+    height: 30px;
+}
+.navbtnregister{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbtnlogin{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbtnregister{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #116597;
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: #116597;
+}
+.navbtnregister:hover{
+    background-color: #116597;
+    color: white;
+}
+.navbtnlogin{
+    width: 150px;
+    height: 40px;
+    background-color: #116597;
+    border: 1px solid #116597;
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: white;
+}
+.navbtnlogin:hover{
+    background-color: white;
+    color: #116597;
+}
+.navpos{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navimag{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.navimage3{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navite{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navimage4{
+    width: 30px;
+    height: 30px;
+    filter: invert(0.6) sepia(1) hue-rotate(300deg);
+}
+@media (min-width: 700px){
+    .navbar{
+        height: 55px;
+    }
+    .navcenter{
+        position: relative;
+        top: 10px;
+    }
+}

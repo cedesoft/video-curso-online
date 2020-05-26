@@ -1,0 +1,496 @@
+.headerRegis{
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 70px;
+    background: linear-gradient(90deg, #116597 0%, #15BBE3 100%), #E5E5E5;
+    position: absolute;
+}
+
+.headerRegis h2{
+    position: absolute;
+    width: 850px;
+    height: 60px;
+    left: 50px;
+    top: 20px;
+    color: white;
+}
+
+.RectCard{
+    position: absolute;
+    width: 278px;
+    height: 60px;
+    left: 110px;
+    top: 245px;
+
+    border: 1px solid #116597;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    }
+
+    .letraCard{
+        position: absolute;
+    width: 278px;
+    height: 60px;
+    left: 100px;
+    top: 1px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #116597;
+    }
+
+    .RectPayPal{
+    position: absolute;
+    width: 278px;
+    height: 60px;
+    left: 398px;
+    top: 245px;
+
+    background: #FFE39C;
+    border: 2.5px solid #116597;
+    box-sizing: border-box;
+    border-radius: 3px;
+    }
+
+    .RectRed{
+    position: absolute;
+    width: 660px;
+    height: 111px;
+    left: 110px;
+    top: 200px;
+
+    background: #FFF5DC;
+    border: 0.25px solid rgba(77, 77, 77, 0.5);
+    box-sizing: border-box;
+    border-radius: 3px;
+    }
+
+    .ConPayPal{
+    position: absolute;
+    width: 620px;
+    height: 41px;
+    left: 10px;
+    top: 10px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #4D4D4D;
+    }
+
+    .desPay{
+        position: absolute;
+        width: 396px;
+        height: 20px;
+        left: 10px;
+        top: 50px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+
+        color: #4D4D4D;
+
+
+    }
+
+    /**/
+
+    .Rectangle1{
+        position: absolute;
+        width: 330px;
+        height: 322px;
+        left: 840px;
+        top: 200px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.125);
+        border-radius: 3px
+
+      }
+
+      .titleResultado2{
+        position: absolute;
+          width: 278px;
+          height: 25px;
+          left: 35px;
+          top: 15px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          /* identical to box height */
+          display: flex;
+          align-items: center;
+          color: #333333;
+
+      }
+
+      .linepayments{
+        position: absolute;
+        width: 278px;
+        height: 0px;
+        left: 6px;
+        top: 40px;
+
+        border: 0.25px solid rgba(0, 0, 0, 0.5);
+      }
+
+      .linepayments2{
+        position: absolute;
+        width: 278px;
+        height: 0px;
+        left: 20px;
+        top: 120px;
+
+        border: 0.25px solid rgba(0, 0, 0, 0.5);
+      }
+
+      .cursoPayments{
+        position: relative;
+        width: 300px;
+        height: 35px;
+        left: 20px;
+        top: 90px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #4D4D4D;
+        }
+
+        .precioPayments{
+        position: relative;
+        width: 150px;
+        height: 35px;
+        left: 25px;
+        top: 20px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #4D4D4D;
+        }
+
+        .cursoPayments2{
+            position: relative;
+            width: 300px;
+            height: 20px;
+            left: 20px;
+            top: 40px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            color: #4D4D4D;
+         }
+
+            .precioPayments2{
+                position: relative;
+                width: 150px;
+                height: 12px;
+                left: 15px;
+                top: 1px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                display: flex;
+                align-items: center;
+                text-align: right;
+                color: #4D4D4D;
+            }
+
+
+     .totalPayments{
+
+    position: absolute;
+    width: 86px;
+    height: 25px;
+    left: 877px;
+    top: 369px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #4D4D4D;
+
+     }
+
+     .Total{
+      position: absolute;
+      width: 86px;
+      height: 25px;
+      left: 70px;
+      top: 215px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+
+      /* identical to box height */
+      display: flex;
+      align-items: center;
+      text-align: right;
+
+      color: #4D4D4D;
+
+     }
+
+     .pagarTotal{
+        position: absolute;
+        width: 180px;
+        height: 25px;
+        left: 55px;
+        top: 1px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+
+        color: #15BBE3;
+
+     }
+
+     .botonPagar{
+        position: absolute;
+        width: 278px;
+        height: 50px;
+        left: 15px;
+        top: 190px;
+
+        background: #15BBE3;
+        border-radius: 50px;
+
+        font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #FFFFFF;
+     }
+
+     /*pago seguro*/
+
+     .pagoseguro{
+        position: absolute;
+        width: 306px;
+        height: 22px;
+        left: 90px;
+        top: 345px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #4D4D4D;
+        }
+
+        .descripcionsseguro{
+             position: absolute;
+        width: 250px;
+        height: 35px;
+        left: 30px;
+        top: 365px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #4D4D4D;
+        }
+        /*  payment detalle*/
+
+        .RectCard{
+            position: absolute;
+            width: 278px;
+            height: 60px;
+            left: 110px;
+            top: 245px;
+
+            border: 1px solid #116597;
+            box-sizing: border-box;
+            border-radius: 3px;
+
+            }
+
+        .rectanguloDetalle{
+            position: absolute;
+            width: 660px;
+            height: 56px;
+            left: 0px;
+            top: 30px;
+
+
+            }
+
+            .detallePayment{
+            position: absolute;
+            width: 343px;
+            height: 28px;
+            left: 155px;
+            top: 25px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+
+            color: #333333;
+            }
+
+            .imgPayment{
+            position: absolute;
+            width: 75px;
+            height: 36px;
+            left: 120px;
+            top: 730px;
+
+            border-radius: 3px;
+            }
+
+            .anteriorPrecio{
+            position: absolute;
+            width: 71px;
+            height: 17px;
+            left: 589px;
+            top: 10px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 13px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            text-decoration-line: line-through;
+
+            color: #4D4D4D;
+            }
+
+            .actualPrecio{
+            position: relative;
+            width: 107px;
+            height: 25px;
+            left: 569px;
+            top: 30px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            color: #FF7B7B;
+            }
+
+            .DetalleCurse{
+                position: absolute;
+                top:230px;
+             }
+
+             .detalleC{
+                position: absolute;
+                width: 247px;
+                height: 25px;
+                left: -729px;
+                top: 150px;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+
+                /* identical to box height */
+                display: flex;
+                align-items: center;
+
+                color: #333333;
+
+
+                }
+                .botonDePagar{
+
+               position: absolute;
+               width: 278px;
+               height: 50px;
+               left: 80px;
+               top: 259px;
+
+
+                }
+
+                .cantidad{
+                    position: absolute;
+                 width: 278px;
+                 height: 25px;
+                 left: 60px;
+                top: 15px;
+                }

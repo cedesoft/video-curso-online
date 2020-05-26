@@ -1,0 +1,22 @@
+.btnfirst{
+    position: relative;
+    left: 300px;
+    background-color: #116597;
+    color: white;
+    width: 200px;
+    border-radius: 30px;
+}
+.btnsecond{
+    position: relative;
+    left: 450px;
+    color:#116597; 
+    width: 200px;
+    border-radius: 30px;
+}
+.btnfirst:hover{
+    background-color: #116597;
+    color: white;
+}
+.btnsecond:hover{
+    color:#116597; 
+}

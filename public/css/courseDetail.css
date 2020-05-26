@@ -1,0 +1,92 @@
+.headercontentcourse {
+  
+    
+    width: 100%;
+    height: 283px;
+    left: 0px;
+    top: 70px;
+            background: linear-gradient(90deg, #116597 0%, #15bbe3 100%), #faf8f8;
+          }
+    
+          .headercontentcourse h1{
+            position: relative;
+            width: 734px;
+            height: 76px;
+            left: 110px;
+            top: 10px;
+            color: white;
+          }
+        
+          .headercontentcourse h3{
+            position: relative;
+            width: 717px;
+            height: 26px;
+            left: 112px;
+            top: 10px;
+            color: white;
+          }
+    
+          .headercontentcourse h5{
+            position: relative;
+            width: 732px;
+            height: 46px;
+            left: 112px;
+            top: 15px;
+            color: white;
+          }
+    
+          .stylecard{
+            position: relative;
+            width: 313px;
+            height: 488px;
+            left: 857px;
+            top: -170px;
+    
+          }
+          .title{
+            position: relative;
+            width: 717px;
+            height: 26px;
+            
+            left: 112px;
+            
+         
+          }
+    
+          .title2{
+            position: relative;
+            width: 658px;
+            height: 26px;
+            left: 112px;
+            top: 500px;
+          }
+    
+          .title3{
+            position: relative;
+            width: 654px;
+            height: 26px;
+           left: 112px;
+            top: 650px;
+          }
+    
+          .title4{
+            position: relative;
+           width: 654px;
+            height: 26px;
+            left: 112px;
+            top: 800px;
+          }
+    
+          .title5{
+            position: relative;
+            width: 654px;
+            height: 26px;
+            left: 112px;
+            top: 1150px;
+          }
+        .comentario{
+          position: relative;
+          left: 112px;
+         top:1300px;
+        }
+       

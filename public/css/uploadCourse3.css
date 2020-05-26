@@ -1,0 +1,355 @@
+.headeruploadcourse {
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 70px;
+        background: linear-gradient(90deg, #116597 0%, #15bbe3 100%), #faf8f8;
+      }
+    
+      .headeruploadcourse h1{
+        color: white;
+        position: absolute;
+        left: 300px;
+        top: 70px;
+        
+        color: #FFFFFF;
+      }
+      .formupload{
+          position: absolute;
+        width: 990px;
+        height: 52px;
+       /* left: 259px;*/
+    
+        background: #116597;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .formupload h4{
+      position: absolute;
+      color: #FFFFFF;
+      left: 350px;
+     
+      border-radius: 15px;
+    }
+    .formuploadcard{
+      position: absolute;
+      width: 990px;
+      height: 1004px;
+      left: 259px;
+      top: 254px;
+      background: #FAF8F8;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+
+
+     
+     /*width: 990px;
+     height: 1004px;
+     left: 259px;
+     top: 254px;
+
+     background: #FFFFFF;
+     border: 0.25px solid rgba(0, 0, 0, 0.5);
+     box-sizing: border-box;
+     border-radius: 5px;*/
+  }
+
+  .nameinput{
+    position: absolute;
+    width: 809px;
+    height: 39px;
+    left: 90px;
+    top: 150px;
+    border: 0.25px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.label1{
+  position: absolute;
+  color: #000000;
+  left: 90px;
+  top: 115px;
+}
+
+.subtituloinput{
+  position: absolute;
+  width: 809px;
+  height: 39px;
+  left: 90px;
+  top: 250px;
+  border: 0.25px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.label2{
+position: absolute;
+color: #000000;
+left: 90px;
+top: 215px;
+}
+
+.textarea{
+  position: absolute;
+  width: 809px;
+  height: 200px;
+  left: 90px;
+  top: 350px;
+  border: 0.25px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.label3{
+position: absolute;
+color: #000000;
+left: 90px;
+top: 315px;
+}
+.label4{
+  position: absolute;
+  color: #000000;
+  left: 90px;
+  top: 430px;
+  }
+.dropdown{
+    position: absolute;
+    left: 90px;
+    top: 460px;
+    }
+
+    .label5{
+      position: absolute;
+      color: #000000;
+      left: 90px;
+      top: 520px;
+      }
+
+      .contenido{
+        position: absolute;
+        width: 513px;
+        height: 39px;
+        left: 90px;
+        top: 555px;
+        border: 0.25px solid rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+
+      .label6{
+        position: absolute;
+        color: #000000;
+        left: 90px;
+        top: 620px;
+        }
+
+        .imagenupload{
+          position: absolute;
+          left: 90px;
+          top: 650px;
+        }
+        .imagenupload img{
+          position: absolute;
+          left: 90px;
+          width: 200px;
+          height: 200px;
+        } 
+        .btnupload{
+          position: absolute;
+          left: 90px;
+          top: 650px;
+        }
+
+        .plan{
+          position: absolute;
+          left: 100px;
+          width: 236px;
+          height: 402px;
+          left: 16px;
+        
+        }
+.headeruploadcourse {
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 70px;
+        background: linear-gradient(90deg, #116597 0%, #15bbe3 100%), #faf8f8;
+      }
+    
+      .headeruploadcourse h1{
+        color: white;
+        position: absolute;
+        left: 300px;
+        top: 70px;
+        
+        color: #FFFFFF;
+      }
+      .formupload{
+          position: absolute;
+        width: 990px;
+        height: 52px;
+       /* left: 259px;*/
+    
+        background: #116597;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .formupload h4{
+      position: absolute;
+      color: #FFFFFF;
+      left: 350px;
+     
+      border-radius: 15px;
+    }
+    .formuploadcard{
+      position: absolute;
+      width: 990px;
+      height: 1004px;
+      left: 259px;
+      top: 254px;
+      background: #FAF8F8;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+
+
+     
+     /*width: 990px;
+     height: 1004px;
+     left: 259px;
+     top: 254px;
+
+     background: #FFFFFF;
+     border: 0.25px solid rgba(0, 0, 0, 0.5);
+     box-sizing: border-box;
+     border-radius: 5px;*/
+  }
+
+  .nameinput{
+    position: absolute;
+    width: 809px;
+    height: 39px;
+    left: 90px;
+    top: 150px;
+    border: 0.25px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.label1{
+  position: absolute;
+  color: #000000;
+  left: 90px;
+  top: 115px;
+}
+
+.subtituloinput{
+  position: absolute;
+  width: 809px;
+  height: 39px;
+  left: 90px;
+  top: 250px;
+  border: 0.25px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.label2{
+position: absolute;
+color: #000000;
+left: 90px;
+top: 215px;
+}
+
+.textarea{
+  position: absolute;
+  width: 809px;
+  height: 200px;
+  left: 90px;
+  top: 350px;
+  border: 0.25px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.label3{
+position: absolute;
+color: #000000;
+left: 90px;
+top: 315px;
+}
+.label4{
+  position: absolute;
+  color: #000000;
+  left: 90px;
+  top: 430px;
+  }
+.dropdown{
+    position: absolute;
+    left: 90px;
+    top: 460px;
+    }
+
+    .label5{
+      position: absolute;
+      color: #000000;
+      left: 90px;
+      top: 520px;
+      }
+
+      .contenido{
+        position: absolute;
+        width: 513px;
+        height: 39px;
+        left: 90px;
+        top: 555px;
+        border: 0.25px solid rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+
+      .label6{
+        position: absolute;
+        color: #000000;
+        left: 90px;
+        top: 620px;
+        }
+
+        .imagenupload{
+          position: absolute;
+          left: 90px;
+          top: 650px;
+        }
+        .imagenupload img{
+          position: absolute;
+          left: 90px;
+          width: 200px;
+          height: 200px;
+        } 
+        .btnupload{
+          position: absolute;
+          left: 90px;
+          top: 650px;
+        }
+
+        .plan{
+          position: absolute;
+          left: 100px;
+          width: 236px;
+          height: 402px;
+          left: 16px;
+        
+        }
+        .cardplan{
+            width: 236px;
+            height: 402px;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        /*box-sizing: border-box;*/
+        
+        }
+        .buttonsave{
+        width: 188px;
+        height: 52px;
+        left: 20px;
+        background-color: #116597;
+        color: white;
+        border-radius: 15px;
+        position: absolute;
+        top: 300px;
+        border-radius: 50px;
+        
+        }
+        

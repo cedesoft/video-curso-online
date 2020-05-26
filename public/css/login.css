@@ -1,0 +1,38 @@
+.imagelogin{
+    background-image: url('../images/workstation-336369_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100ph;
+    opacity: 60%;
+}
+.formlo{
+    position: relative;
+    top: 150px;
+}
+.textcolor{
+    color: #116597;
+}
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .fontt{
+    font-size: 80px;
+    margin-bottom: 100px;
+    color: white;
+  }
+  @media (max-width: 1200px){
+    .imagelogin{
+        min-height: 50vh;
+    }
+    .fontt{
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+    .formlo{
+        position: relative;
+        top: 50px;
+    }
+}

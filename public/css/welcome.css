@@ -1,0 +1,408 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+/* INICIO: Esto es lo que necesitan para la imagen del banner */
+.banner{
+    height: 350px;
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    min-height:100%;
+}
+/* FIN: Esto es lo que necesitan para la imagen del banner */
+
+.welcome-message{
+    width: 100%;
+    max-width: 450px;
+    color: white;
+    font-size: 20px;
+}
+
+.welcome-message h1{
+    font-size: 38px;
+    margin: 0;
+    padding-left: 15%;
+    padding-top: 60px;
+}
+.welcome-message p{
+    padding-left: 15%;
+}
+.welcome-message .btn-show{
+    margin-left: 15%;
+}
+.welcome-message img{
+    position: relative;
+}
+
+.header h1{
+    margin: 0;
+}
+
+.btn{
+    width: 166px;
+    height: 47px;
+    border-radius: 50px;
+    border-style: none;
+    outline-style: none;
+    font-size: 15px;
+}
+.btn-show{
+    background: #FFFFFF;
+    color: #15BBE3;
+}
+.btn-register{
+    background: #15BBE3;
+    color: #FFFFFF;
+}
+
+.titulo1{
+    position: absolute;
+width: 373px;
+height: 39px;
+left: 600px;
+top: 441px;
+
+/*font-family: Montserrat;*/
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 100%;
+/* or 32px */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #333333;
+}
+
+.titulo2 {
+    position: absolute;
+width: 687px;
+height: 64px;
+left: 350px;
+top: 500px;
+
+/*font-family: Montserrat;*/
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #4D4D4D;
+}
+
+.tituloCard{
+    
+position: absolute;
+width: 124px;
+height: 22px;
+left: 95px;
+top: 300px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #4D4D4D;
+}
+
+.parrafoCard{
+position: absolute;
+width: 277px;
+height: 47px;
+
+top: 320px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #4D4D4D;
+}
+
+.imagenCard{
+    position: absolute;
+width: 108px;
+height: 108px;
+left: 90px;
+top: 180px;
+}
+
+.rectangulo{
+position: absolute;
+width: 100%;
+height: 250px;
+left: 0px;
+top: 900px;
+
+background: #F4F8F9;
+}
+
+.titulo3{
+    position: absolute;
+width: 315px;
+height: 27px;
+left: 578px;
+top: 50px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #333333;
+}
+
+.titulo4{
+    position: absolute;
+width: 592px;
+height: 110px;
+left: 578px;
+top: 80px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+color: #333333;
+}
+
+.imagen img{
+
+    position: relative;
+    top: 20px;
+    left: 400px;   
+    height: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.circulo1 {
+    position: absolute;
+    left: 150px;   
+    height: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+
+    top: 15px;
+    position: absolute;
+    /*width: 125.62px;
+    height: auto;
+    height: 52.73px;
+    left: 329px;
+    top: 767px;
+     border-radius: 100%;*/
+     background: #116597;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.circulo2 {
+    position: absolute;
+    left: 280px;   
+    height: auto;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+
+    top: 120px;
+    position: absolute;
+    /*width: 125.62px;
+    height: auto;
+    height: 52.73px;
+    left: 329px;
+    top: 767px;
+     border-radius: 100%;*/
+     background: #15BBE3;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.circulo3 {
+    position: absolute;
+    left: 280px;   
+    height: auto;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+
+    top: 5px;
+    position: absolute;
+    /*width: 125.62px;
+    height: auto;
+    height: 52.73px;
+    left: 329px;
+    top: 767px;
+     border-radius: 100%;*/
+     background: #E5E5E5;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+
+.cards{
+    position: absolute;
+    top: 1200px;
+}
+
+.rectangulo2{
+    position: absolute;
+width: 100%;
+height: 247px;
+left: 0px;
+top: 1650px;
+
+background: #116597;
+}
+
+/*.explora{
+    position: absolute;
+width: 276px;
+height: 22px;
+left: 502px;
+top: 1889px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #116597;
+}*/
+
+.rectangulo2 h2{
+    position: absolute;
+width: 344px;
+height: 29px;
+left: 500px;
+top: 80px;
+
+/*font-family: Montserrat;*/
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.rectangulo2 h5{
+    position: absolute;
+width: 495px;
+height: 44px;
+left: 393px;
+top: 110px;
+
+/*font-family: Montserrat;*/
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.rectangulo2 button{
+    position: absolute;
+width: 214px;
+height: 47px;
+left: 533px;
+top: 170px;
+
+background: #15BBE3;
+border-radius: 50px;
+color: #FFFFFF;
+}
+
+.titulo5 h2{
+    position: absolute;
+width: 315px;
+height: 27px;
+left: 110px;
+top: 2000px;
+
+/*font-family: Montserrat;*/
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #333333;
+
+}
+
+.titulo5 h5{
+    position: absolute;
+width: 592px;
+height: 110px;
+left: 110px;
+top: 2020px;
+
+/*font-family: Montserrat;*/
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+color: #333333;
+}
+
+.titulo5 img{
+    position: absolute;
+width: 450px;
+height: 450px;
+left: 900px;
+top: 1750px;
+
+}

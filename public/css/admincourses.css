@@ -1,0 +1,14 @@
+.cardcourses{
+    width: 100%;
+    background: #FAF8F8;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.headercardcourses{
+    background: #116597;
+    border-radius: 15px;
+}
+.headercardcourses h3{
+    color: white;
+    text-align: center;
+}

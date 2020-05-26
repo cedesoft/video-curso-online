@@ -1,0 +1,21 @@
+.cardplan{
+    width: 236px;
+    height: 402px;
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+/*box-sizing: border-box;*/
+
+}
+.buttonsave{
+width: 188px;
+height: 52px;
+left: 20px;
+background-color: #116597;
+color: white;
+border-radius: 15px;
+position: absolute;
+top: 300px;
+border-radius: 50px;
+
+}
+

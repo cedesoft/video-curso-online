@@ -1,0 +1,7 @@
+.circulo {
+    filter: invert(0.8);
+}
+.number{
+    position: relative;
+    right: 19px;
+}

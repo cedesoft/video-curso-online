@@ -1,0 +1,10 @@
+.viewintro a{
+    position: relative;
+    background-color: #15BBE3;
+    border-radius: 50px;
+    color: white;
+    width: 25%;
+}
+.viewintro a:hover{
+    color: white;
+}

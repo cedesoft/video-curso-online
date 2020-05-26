@@ -1,0 +1,16 @@
+.headercontentlibrary {
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 70px;
+        background: linear-gradient(90deg, #116597 0%, #15bbe3 100%), #faf8f8;
+      }
+    
+      .headercontentlibrary h1{
+        color: white;
+        position: relative;
+        left: 100px;
+        top: 20px;
+        
+        color: #FFFFFF;
+      }

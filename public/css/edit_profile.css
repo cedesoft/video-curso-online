@@ -1,0 +1,317 @@
+.headercontent {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(90deg, #116597 0%, #15bbe3 100%), #faf8f8;
+  }
+  .headerimage img {
+    position: relative;
+    top: 20px;
+    left: 100px;   
+    height: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+  .headerimage h2{
+      color: white;
+      position: relative;
+      left: 300px;
+      top: -120px;
+  }
+  .headerimage h4{
+      color: white;
+      position: relative;
+      left: 300px;
+      top: -120px;
+  }
+  .headerimage p{
+      color: white;
+      position: relative;
+      left: 300px;
+      top: -120px;
+  }
+  .headerlink a{
+      color: #15BBE3;
+      position: relative;
+      left: 300px;
+      top: -130px;
+      text-decoration: none;
+  }
+  .headerlink a:hover{
+      color: #102749;
+      text-decoration: none;
+  }
+  .headerbutton a{
+      position: relative;
+      top: -220px;
+      left: 1150px;
+      color: #102749;
+      border-radius: 15px;
+      text-align: center;
+  }
+  .headerbutton a:hover{
+      color: white;
+      text-decoration: none;
+  }
+  .text-container h5{
+      position: absolute;
+      top: -60px;
+  }
+  .text-container p{
+      position: relative;
+      top: -20px;
+      text-align: justify;
+  }
+  .card-n{
+      position: relative;
+      left: 100px;
+      right: 100px;
+      top: 400px;
+  }
+  .text-container h6{
+      position: relative;
+      top: 0px;
+  }
+
+  .form1 {
+    position: absolute;
+    top: 50px;
+    width: 1100px;
+}
+.form2{
+    position: absolute;
+    top: 600px;
+    width: 1100px;
+}
+.form3{
+    position: absolute;
+    top: 1500px;
+    width: 1100px;
+}
+.form4{
+    position: absolute;
+    top: 1100px;
+    width: 1100px;
+}
+.cardn{
+    width: 1100px;
+    height: 500px;
+    background: #FAF8F8;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.form{
+    /*background: #116597;
+    border-radius: 15px;*/
+
+background: #116597;
+border-radius: 10px 10px 0px 0px;
+}
+.form h3{
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+}
+.cardcontent{
+    padding: 10px;
+}
+.cardcontent img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    top: 50px;
+    left: 100px;
+}
+.div_file {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+.cardcontent small{
+    position: absolute;
+    top:250px;
+    left: 50px;
+}
+.cardcontent label{
+    position: absolute;
+    top: 230px;
+    left: 550px;
+}
+.cardcontent button{
+    background-color: #116597;
+    color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 300px;
+    left: 550px;
+}
+.cardn button:hover{
+    background-color: #15BBE3;
+    color:white;
+}
+.cardnew{
+    width: 1100px;
+    height: 450px;
+    background: #FAF8F8;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.formnew{
+    background: #116597;
+    border-radius: 10px 10px 0px 0px;
+}
+.formnew h3{
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+}
+.formname input{
+    width: 400px;
+}
+.formlastname input{
+    position: absolute;
+    top: 120px;
+    width: 400px;
+}
+.formnickname input{
+    position: absolute;
+    top: 200px;
+    width: 400px;
+}
+.formabout textarea{
+    position: relative;
+    top:40px;
+    left: 500px;
+    width: 600px;
+    height: 150px;
+    max-width: 600px;
+    max-height: 150px;
+    min-width: 600px;
+    min-height: 150px;
+}
+.formbutton button{
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    background-color: #116597;
+    color: white;
+    border-radius: 15px;
+}
+.formbutton button:hover{
+    background-color: #15BBE3;
+    color: white;
+}
+
+.cardemail{
+    width: 1100px;
+    height: 350px;
+    background: #FAF8F8;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.formnewemail{
+    background: #116597;
+    border-radius: 10px 10px 0px 0px;
+}
+.formnewemail h3{
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+}
+.formememail input{
+    position: relative;
+    left: 300px;
+    width: 450px;
+}
+.formememail label{
+    position: relative;
+    left: 300px;
+    border-radius: 5px;
+    color: white;
+}
+.formempass input{
+    position: relative;
+    left: 300px;
+    width: 450px;
+}
+.formembtn button{
+    position: relative;
+    left: 450px;
+    background-color: #116597;
+    color: white;
+    border-radius: 15px;
+}
+.formembtn button:hover{
+    background-color: #15BBE3;
+    color: white;
+}
+
+
+.cardpass{
+    width: 1100px;
+    height: 350px;
+    background: #FAF8F8;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.formnewpass{
+    background: #116597;
+    border-radius: 10px 10px 0px 0px;
+}
+.formnewpass h3{
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+}
+.formpassnow input{
+    position: relative;
+    left: 300px;
+    width: 450px;
+}
+.formpassnow label{
+    position: relative;
+    left: 300px;
+    border-radius: 5px;
+    color: white;
+}
+.formpasswordnew input{
+    position: relative;
+    left: 300px;
+    width: 450px;
+}
+.formpasscon input{
+    position: relative;
+    left: 300px;
+    width: 450px;
+}
+.formbtnpass button{
+    position: relative;
+    left: 450px;
+    background-color: #116597;
+    color: white;
+    border-radius: 15px;
+}
+.formbtnpass button:hover{
+    background-color: #15BBE3;
+    color: white;
+}
+
+
+.widthfooter{
+    width: 100%;
+}
+.space{
+    padding-left: 30px;
+    padding-left: 30px;
+}
+.imgwidth{
+    width: 30px;
+    height: 30px;
+    opacity: 40%;
+}
+.imgin{
+    width: 30px;
+    height: 30px;
+}

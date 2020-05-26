@@ -1,0 +1,126 @@
+.headeruploadcourse2 {
+  
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 70px;
+        background: linear-gradient(90deg, #116597 0%, #15bbe3 100%), #faf8f8;
+      }
+
+      .headeruploadcourse2 h1{
+        color: white;
+        position: absolute;
+        left: 300px;
+        top: 70px;
+        
+        color: #FFFFFF;
+      }
+      .formupload2{
+        position: absolute;
+      width: 990px;
+      height: 52px;
+     /* left: 259px;*/
+  
+      background: #116597;
+      border-radius: 10px 10px 0px 0px;
+  }
+  .formuploadcard2{
+    position: absolute;
+    width: 990px;
+    height: 500px;
+    left: 259px;
+    top: 254px;
+    background: #FAF8F8;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+
+}
+.formupload2 h4{
+    position: absolute;
+    color: #FFFFFF;
+    left: 420px;
+   
+    border-radius: 15px;
+  }
+
+  .texto1{
+    position: absolute;
+    color: #000000;
+    left: 90px;
+    top: 115px;
+  }
+
+  .formulario{
+    position: absolute;
+    width: 800px;
+    height: 165px;
+    left: 90px;
+    top: 200px;
+    
+    background: #EBEEEF;
+    border-radius: 3px;
+  }
+  .formulario2{
+    position: absolute;
+width: 759px;
+height: 68px;
+left: 20px;
+top: 50px;
+background: #FFFFFF;
+  }
+
+  .formulario label{
+    position: absolute;
+    width: 800px;
+    height: 165px;
+    left: 20px;
+    top: 15px;
+    
+    color: #000000;
+    border-radius: 3px;
+  }
+
+  .formulario2 label{
+    position: absolute;
+width: 759px;
+height: 68px;
+left: 20px;
+top: 20px;
+color: #000000;
+  }
+
+  .formulario2 button{
+width: 164px;
+height: 39px;
+left: 100px;
+background-color: #FFFFFF;
+color: black;
+position: absolute;
+top: 20px;
+
+  }
+  .footerposition{
+    position: relative;
+   
+  }
+
+  .cardplan{
+    width: 236px;
+    height: 402px;
+background: #FFFFFF;
+border: 1px solid #E5E5E5;
+/*box-sizing: border-box;*/
+
+}
+.buttonsave{
+width: 188px;
+height: 52px;
+left: 35px;
+background-color: #116597;
+color: white;
+border-radius: 15px;
+position: absolute;
+top: 480px;
+border-radius: 50px;
+
+}

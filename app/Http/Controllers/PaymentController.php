@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Payment;
 use Session;
+use Symfony\Component\HttpKernel\Event\ViewEvent;
+
 class PaymentController extends Controller
 {
     /**
@@ -46,9 +48,10 @@ class PaymentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
         //
+       return view('payments.successfulPayPal');
     }
 
     /**

@@ -28,20 +28,23 @@
           @foreach($courses as $course)
     <div class="col-12 col-md-6 col-lg-4 mb-4">
     <div class="card">
-   
+
         <div class="card-header">
           <img src="{{asset('images/'.$course->path)}}" />
         </div>
         <div class="card-content">
           <h1>{{$course->title}}</h1>
-          <span>Impartido por : {{$course->name}}</span>
           <p>{{$course->description}}</p>
-          <a href="{{route('coursedetail', $course->id)}}">Ver mas</a><button class="" >Añadir al carrito</button>
+        <a href="{{route('coursedetail', $course->id)}}">Ver mas</a>
+
+        <div class="boton_card a">
+            <a href="{{route('viewcourseintroduction',$course->id)}}">Ver curso</a>
+            </div>
         </div>
-        
+
       </div>
     </div>
-    
+
     @endforeach
     </div>
     {{$courses->links()}}

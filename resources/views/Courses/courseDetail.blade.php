@@ -9,7 +9,7 @@
       @foreach($courses as $course)
       <div class="headercontentcourse">
             <h1>{{$course->title}}</h1>
-            <h3>Por {{$course->name}}</h3>
+            <!--<h3>Por {{$course->name}}</h3>!-->
             <h5>{{$course->description}}</h5>
       </div>
 
@@ -20,9 +20,9 @@
                   </div>
                   <div class="card-content">
                         <h1>{{$course->title}}</h1>
-                        <span>Impartido por : {{$course->name}}</span>
+                        <!--<span>Impartido por : {{$course->name}}</span>!-->
                         <p>{{$course->description}}</p>
-                        <button class="">Añadir al carrito</button>
+                        <!-- <button class="">Añadir al carrito</button>!-->
                   </div>
             </div>
       </div>
@@ -48,17 +48,34 @@
                   <p> titulo de documento: {{$file->file_title}}</p>
             </div>
             @endforeach
+            
             @foreach($courses as $coursess)
             <div style="position: relative; top:-150px">
                   <h3>Agrega una recomendacion</h3>
+                  @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                  <strong> Error! </strong> Reviseloscampos
+                  obligatorios.<br><br>
+                  <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                  </ul>
+            </div>
+            @endif
+            @if(Session::has('success'))
+            <div class="alert alert-info">
+                  {{Session::get('success')}}
+            </div>
+            @endif
                   <form action="{{route('calification')}}" method="POST" role="form">
 
                         {{ csrf_field() }}
                         <input type="hidden" name="course_id" value="{{$coursess->id}}">
                         <label for="">Selecciona una opcion</label>
                         <select class="form-group form-control" name="recommend">
-                              <option value="Recomiendo">Recomiendo</option>
-                              <option value="No recomiendo">No recomiendo</option>
+                              <option value="Recomiendo">Recomendado</option>
+                              <option value="No recomiendo">No recomendado</option>
                         </select>
                         <label for="">Comentario</label>
                         <input name="comment" type="text" class="form-group form-control" placeholder="Comentario">
@@ -71,7 +88,9 @@
 
                   <div class="commentary">
                         <a target="_blank" href="{{route('user_profile',$cual->id)}}"><img src="{{asset('images/'.$cual->avatar)}}" /></a>
-                        <a style="color: black; text-decoration: none" target="_blank" href="{{route('user_profile',$cual->id)}}"><h5>{{$cual->name}}</h5></a>
+                        <a style="color: black; text-decoration: none" target="_blank" href="{{route('user_profile',$cual->id)}}">
+                              <h5>{{$cual->name}}</h5>
+                        </a>
                         <h6>{{$cual->recomend}}</h6>
                         <div class="description">
                               <h10>{{$cual->comment}}</h10>

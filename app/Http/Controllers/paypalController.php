@@ -15,7 +15,7 @@ use PayPal\Api\RedirectUrls;
 use PayPal\Api\Transaction;
 use PayPal\Exception\PayPalConnectionException;
 use Session;
-use App\Pagos;
+use App\Pago;
 
 
 
@@ -75,13 +75,7 @@ try {
     //echo $payment;
     // Recorrer los items del carrito y hacer el registro de cursos al usuario ( BD )
     // Eliminar el carrito de compras (SESSION = Cart) $MiCarrito::unset();
-    //foreach ($MiCarrito != null ? $MiCarrito->items : [] as $item){
-       // $pay = new Pagos();
-       // $pay->amount= $item['item']['price'];
-       // $pay->user_id = Auth()->user()->id;
-       // $pay->course_id = $item['item']['id'];
-       // $pay->save();
-   // }
+
     return redirect()->away($payment->getApprovalLink());
 }
 catch (PayPalConnectionException $ex) {
@@ -91,30 +85,38 @@ catch (PayPalConnectionException $ex) {
 }
 
 public function payPalStatus(Request $request){
-
 //($request->all());
 $paymentId =$request->input('paymentId');
 $payerId =$request->input('PayerID');
 $token =$request->input('token');
 
-
-if(!$paymentId || !$payerId ||!$token){
+if(!$paymentId || !$payerId ||!$token)
+{
     $status = 'No se pudo proceder con el pago a traves de PayPal.';
 return redirect('paymentPaypal')->with(compact('status'));
 }
-
 $payment =Payment::get($paymentId,$this->apiContext);
-
 $execution = new PaymentExecution();
 $execution->setPayerId($payerId);
-
 $result = $payment->execute($execution,$this->apiContext);
 //dd($result);
-
 if($result->getState() === 'approved'){
+
+    $MiCarrito = Session::has('cart') ? Session::get('cart') : null;
+    foreach($MiCarrito != null ? $MiCarrito->items : [] as $item){
+        $pay = new Pago();
+        $pay->amount =number_format($item['price'], 2, '.', '');  //$item['item']['price'];
+        $pay->user_id =Auth()->user()->id;
+        $pay->course_id =$item['item']['id'];
+        $pay->save();
+
+    }
+
     $status = 'Gracias!El pago a traves de paypal se ha realizado correctamente';
-    return redirect('paymentPaypal')->with(compact('status'));
+    //Session::forget('cart');
+    return redirect('successfulPayPal')->with(compact('status'));
 }
+
 $status = 'Lo sentimos! El pago a traves de PayPal no se pudo realizar';
 return redirect('paymentPaypal')->with(compact('status'));;
 }

@@ -47,7 +47,7 @@
                         <a class="nav-link navcenter" href="{{route('course.index')}}">Biblioteca</a>
                     </li>
                     <li class="nav-item active navpos">
-                        <a class="nav-link navcenter" href="#">Preguntas frecuentes</a>
+                        <a class="nav-link navcenter" href="{{route('preguntasfrecuentes')}}">Preguntas frecuentes</a>
                     </li>
                     @guest
                     @if (Route::has('register'))

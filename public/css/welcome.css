@@ -1,3 +1,10 @@
+
+.contenedorPagina{
+    width: 100%;
+    max-width: 1800px;
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -64,164 +71,220 @@ body{
     color: #FFFFFF;
 }
 
+.container{
+
+}
+
 .titulo1{
-    position: absolute;
-width: 373px;
-height: 39px;
-left: 600px;
-top: 441px;
+    /*position: absolute;*/
+width: 100%;
+/*padding-left:30%;*/
+padding-top: 100px;
 
 /*font-family: Montserrat;*/
-font-style: normal;
+/*font-style: normal;
 font-weight: 300;
 font-size: 32px;
 line-height: 100%;
 /* or 32px */
 
-display: flex;
-align-items: center;
+/*display: flex;
+align-items: center;*/
 text-align: center;
 
 color: #333333;
 }
 
 .titulo2 {
-    position: absolute;
-width: 687px;
-height: 64px;
-left: 350px;
+/*position: absolute;*/
+width: 100%;
+     /*padding-left: 15%;*/
 top: 500px;
 
 /*font-family: Montserrat;*/
-font-style: normal;
+/*font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 22px;
 display: flex;
-align-items: center;
+align-items: center;*/
 text-align: center;
 
 color: #4D4D4D;
+
+}
+.titulo2 a{
+background-color: aqua;
 }
 
 .tituloCard{
-    
-position: absolute;
-width: 124px;
-height: 22px;
-left: 95px;
-top: 300px;
 
-font-family: Montserrat;
+/*position: absolute;*/
+width: 100%;
+height: 22px;
+/*padding-left: 10%;
+/*left: 30%;*/
+/*padding-top: 300px;*/
+
+/*font-family: Montserrat;
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
 line-height: 22px;
 /* identical to box height */
 
-display: flex;
-align-items: center;
+/*display: flex;
+align-items: center;*/
 text-align: center;
 
 color: #4D4D4D;
 }
 
 .parrafoCard{
-position: absolute;
-width: 277px;
-height: 47px;
+/*position: absolute;*/
+width: 100%;
+height: 50px;
 
-top: 320px;
+/*eft: 15%;*/
+/*padding-top: 320px;*/
 
-font-family: Montserrat;
+/*font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 22px;
 display: flex;
-align-items: center;
+align-items: center;*/
 text-align: center;
 
 color: #4D4D4D;
 }
 
+
 .imagenCard{
-    position: absolute;
+    /*position: absolute;*/
+display:block;
+margin:auto;
 width: 108px;
 height: 108px;
-left: 90px;
+/*left: 60%;*/
 top: 180px;
 }
 
-.rectangulo{
-position: absolute;
-width: 100%;
-height: 250px;
-left: 0px;
-top: 900px;
 
-background: #F4F8F9;
+.contenedor{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 120px;
+
 }
 
-.titulo3{
-    position: absolute;
-width: 315px;
-height: 27px;
-left: 578px;
-top: 50px;
 
-font-family: Montserrat;
+.contenedor2{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    background: rgb(237, 238, 240);
+}
+
+
+.contenedor3{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+
+
+}
+/*.contenedor3 a{
+    background-color: blue;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+}*/
+
+
+
+.rectangulo{
+/*position: absolute;*/
+
+height: 250px;
+/*left: 0%;*/
+/*padding-top: 100px;*/
+padding-bottom: 200px;
+
+background: rgb(237, 238, 240);
+}
+
+.titulo3 h3{
+   /* position: absolute;*/
+width: 100%;
+height: 27px;
+/*padding-left: 30%;*/
+padding-top: 10px;
+
+/*font-family: Montserrat;
 font-style: normal;
 font-weight: 600;
 font-size: 22px;
 line-height: 27px;
 /* identical to box height */
 
-display: flex;
+/*isplay: flex;*/
 align-items: center;
 
 color: #333333;
 }
 
-.titulo4{
-    position: absolute;
-width: 592px;
+.titulo3 h5{
+    /*position: absolute;*/
+width: 100%;
 height: 110px;
-left: 578px;
-top: 80px;
+padding-top: 30px;
+/*padding-left: 30%;
+/*top: 80px;*/
 
-font-family: Montserrat;
+/*font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 22px;
 display: flex;
-align-items: center;
+align-items: center;*/
 
 color: #333333;
 }
 
-.imagen img{
+.imagenCirculo img{
 
-    position: relative;
-    top: 20px;
-    left: 400px;   
-    height: auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-}
-
-.circulo1 {
     position: absolute;
-    left: 150px;   
+   /* top:100px;
+
+    /*left: 20%;  */
+
     height: auto;
     width: 120px;
     height: 120px;
     border-radius: 100%;
+    left: 110px;
 
-    top: 15px;
+}
+
+.circulo1 {
+    /*position: absolute;*/
+    left: 10%;
+    height: auto;
+
+    border-radius: 100%;
     position: absolute;
+    width: 100px;
+    height: auto;
+    height: 100px;
+    left: 300px;
+    top: 40px;
+
+
+    /*position: absolute;
     /*width: 125.62px;
     height: auto;
     height: 52.73px;
@@ -234,14 +297,16 @@ color: #333333;
 
 .circulo2 {
     position: absolute;
-    left: 280px;   
+    left: 10%;
     height: auto;
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
     border-radius: 100%;
+    left: 200px;
 
-    top: 120px;
-    position: absolute;
+
+    top: 160px;
+    /*position: absolute;
     /*width: 125.62px;
     height: auto;
     height: 52.73px;
@@ -253,117 +318,109 @@ color: #333333;
 }
 
 .circulo3 {
-    position: absolute;
-    left: 280px;   
+    /*position: absolute;*/
+    left: 10%;
     height: auto;
     width: 65px;
     height: 65px;
     border-radius: 100%;
 
     top: 5px;
-    position: absolute;
+    /*position: absolute;
     /*width: 125.62px;
     height: auto;
     height: 52.73px;
     left: 329px;
     top: 767px;
      border-radius: 100%;*/
-     background: #E5E5E5;
+     background: #116597;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 
 .cards{
-    position: absolute;
+    /*position: absolute;*/
     top: 1200px;
+    width: 100%;
+    left: 15%;
+    padding-top:50px;
+    padding-bottom: 50px;
+
+
 }
 
 .rectangulo2{
-    position: absolute;
+/*position: absolute;*/
 width: 100%;
 height: 247px;
-left: 0px;
-top: 1650px;
+left: 0%;
+padding-top:50px;
+
+/*padding-bottom:100px;*/
 
 background: #116597;
 }
 
-/*.explora{
-    position: absolute;
-width: 276px;
-height: 22px;
-left: 502px;
-top: 1889px;
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
 
 
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #116597;
-}*/
-
-.rectangulo2 h2{
-    position: absolute;
-width: 344px;
+.titulo6 h2{
+   /* position: absolute;*/
+width: 100%;
 height: 29px;
-left: 500px;
-top: 80px;
+/*padding-left: 30%;*/
+/*padding-left: 30%;*/
 
-/*font-family: Montserrat;*/
-font-style: normal;
+
+
+/*font-style: normal;
 font-weight: 600;
 font-size: 24px;
 line-height: 29px;
 display: flex;
-align-items: center;
+align-items: center;*/
 text-align: center;
 
 color: #FFFFFF;
 }
 
-.rectangulo2 h5{
-    position: absolute;
-width: 495px;
+.titulo6 h5{
+    /*position: absolute;*/
+width: 100%;
 height: 44px;
-left: 393px;
-top: 110px;
+/*padding-left: 8%;
+
 
 /*font-family: Montserrat;*/
-font-style: normal;
+/*font-style: normal;
 font-weight: 300;
 font-size: 18px;
 line-height: 22px;
 display: flex;
-align-items: center;
+align-items: center;*/
 text-align: center;
 
 color: #FFFFFF;
 }
 
-.rectangulo2 button{
-    position: absolute;
+.titulo6 button{
+
 width: 214px;
 height: 47px;
-left: 533px;
-top: 170px;
-
+/*left: 35%;*/
+display:block;
+margin:auto;
 background: #15BBE3;
 border-radius: 50px;
 color: #FFFFFF;
 }
 
 .titulo5 h2{
-    position: absolute;
-width: 315px;
+ /*   position: absolute;*/
+width: 100%;
 height: 27px;
-left: 110px;
+padding-left: 0%;
+padding-top: 100px;
+padding-bottom: 20px;
 top: 2000px;
 
 /*font-family: Montserrat;*/
@@ -381,10 +438,10 @@ color: #333333;
 }
 
 .titulo5 h5{
-    position: absolute;
-width: 592px;
+    /*position: absolute;*/
+width: 100%;
 height: 110px;
-left: 110px;
+padding-left: 0%;
 top: 2020px;
 
 /*font-family: Montserrat;*/
@@ -398,11 +455,17 @@ align-items: center;
 color: #333333;
 }
 
-.titulo5 img{
-    position: absolute;
+.imagenniños img{
+   /*position: absolute;*/
 width: 450px;
 height: 450px;
-left: 900px;
-top: 1750px;
+/*left: 900px;*/
+padding-top: 10px;
 
+}
+
+.imagenFinal img{
+    height: auto;
+    width: 100%;
+    height: 700px;
 }

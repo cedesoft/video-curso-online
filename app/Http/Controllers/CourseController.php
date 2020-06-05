@@ -46,6 +46,8 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request,['path'=>'required', 'title'=>'required', 'description'=>'required',
+        'actual_price'=>'required',]);
         if ($request->hasFile('path')) {
             $file = $request->file('path');
             $name = time() . $file->getClientOriginalName();
@@ -96,6 +98,8 @@ class CourseController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request,['path'=>'required', 'title'=>'required', 'description'=>'required',
+        'actual_price'=>'required',]);
         if ($request->hasFile('path')) {
             $file = $request->file('path');
             $name = time() . $file->getClientOriginalName();
@@ -131,11 +135,12 @@ class CourseController extends Controller
      */
     public function courses($id)
     {
-        $courses = DB::table('courses')
-            ->join('users', 'users.id', '=', 'courses.user_id')
+        $courses = DB::table('pagos')
+            ->join('courses', 'courses.id', '=', 'pagos.course_id')
+            ->join('users', 'users.id', '=', 'pagos.user_id')
             ->select('courses.id','courses.path','courses.title', 'courses.description', 'users.name', 'users.id as user_id')
             ->where('users.id', '=', $id)->paginate(6);
-        return view('courses.mycourses', compact('courses'));
+        return  view('courses.mycourses', compact('courses'));
     }
     /**
      * Display the specified resource.
@@ -187,6 +192,7 @@ class CourseController extends Controller
      */
     public function crearvideo(Request $request)
     {
+        $this->validate($request,['path'=>'required','image'=>'required', 'title'=>'required', 'description'=>'required']);
         if ($request->hasFile('path')) {
             $file = $request->file('path');
             $name = time() . $file->getClientOriginalName();
@@ -250,7 +256,7 @@ class CourseController extends Controller
         ->count();
         $videos = DB::table('videos')
         ->join('courses', 'courses.id', '=', 'videos.course_id')
-        ->select('videos.id','videos.title', 'videos.description','videos.path_image',)
+        ->select('videos.id','videos.title', 'videos.description','videos.path_image')
         ->where('courses.id', '=', $id)
         ->get();
         $files =  DB::table('videos')
@@ -269,6 +275,8 @@ class CourseController extends Controller
         return view('Courses.courseDetail', compact('courses', 'cant', 'videos','files', 'califications'));
     }
     public function calif(Request $request){
+        
+        $this->validate($request,['recommend'=>'required','comment'=>'required']);
         $calification = new Calification;
         $calification->course_id = $request->input('course_id');
         $calification->user_id = Auth()->user()->id;

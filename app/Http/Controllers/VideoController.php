@@ -55,6 +55,7 @@ class VideoController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request,['path'=>'required','title'=>'required']);
         if($request->hasFile('path')){
             $file = $request->file('path');
             $name = time().$file->getClientOriginalName();
@@ -102,6 +103,7 @@ class VideoController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $this->validate($request,['path'=>'required','image'=>'required', 'title'=>'required', 'description'=>'required']);
         if($request->hasFile('path')){
             $file = $request->file('path');
             $name = time().$file->getClientOriginalName();
@@ -181,6 +183,8 @@ class VideoController extends Controller
      * @return \Illuminate\Http\Response
      */
    public function addcomment(Request $request){
+       
+    $this->validate($request,['comment'=>'required']);
     $comment = new Comment();
     $comment->video_id = $request->input('video_id');
     $comment->user_id = Auth()->user()->id;

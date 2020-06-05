@@ -48,7 +48,7 @@ class ProfileController extends Controller
         $profile->about = $request->about;
         $profile->user_id = $request->user_id;
         $profile->save();
-        return redirect()-route('profile.index')->with('success', 'Registro creado');
+        return redirect()->route('profile.index')->with('success', 'Registro creado');
     }
 
     /**
@@ -64,7 +64,15 @@ class ProfileController extends Controller
         ->select('profiles.user_id','profiles.about', 'profiles.avatar', 'users.name', 'users.email', 'users.id')
         ->where('users.id', '=', $user_id)->get();
         //$profile = Profile::where('user_id', '=', $user_id)->get();
-        return view('profile.show', compact('profile'));
+        $courses = DB::table('pagos')
+        ->join('courses', 'courses.id', '=', 'pagos.course_id')
+        ->join('users', 'users.id', '=', 'pagos.user_id')
+        ->select('courses.id','courses.path','courses.title', 'courses.description', 'users.name', 'users.id as user_id')
+        ->where('users.id', '=', $user_id)->paginate(6);
+
+        return view('profile.show', compact('profile','courses'));
+
+
     }
     /**
      * Show the form for editing the specified resource.
@@ -91,6 +99,7 @@ class ProfileController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request,['avatar'=>'required','about'=>'required']);
         if($request->hasFile('avatar')){
             $file = $request->file('avatar');
             $name = time().$file->getClientOriginalName();
@@ -111,6 +120,7 @@ class ProfileController extends Controller
      */
     public function actualizar(Request $request, $id)
     {
+        $this->validate($request,['name'=>'required']);
         $user = User::findOrFail($id);
         $user->name = $request->input('name');
         $user->save();
@@ -129,16 +139,14 @@ class ProfileController extends Controller
             'mypassword' => 'required',
             'newemail' => 'required|string|email'
         ]);
-        if($validator->fails()){
-            return back();
-        }else{
+        
+       $this->validate($request,['mypassword'=>'required','newemail'=>'required|string|email']);
             if(Hash::check($request->mypassword, Auth::user()->password)){
                 $user = new User();
                 $user -> where('email', '=', Auth::user()->email)
                 ->update(['email' => $request->newemail]);
                 return back();
             }
-        }
         //$user = User::findOrFail($id);
         //$user->email = $request->input('email');
         //$user->save();
@@ -157,18 +165,13 @@ class ProfileController extends Controller
         'mypassword' => 'required',
         'password' => 'required|confirmed'
        ]);
-            if($validator->fails()){
-                return back();
-            }
-            else{
+       $this->validate($request,['mypassword'=>'required','password'=>'required|confirmed']);
                 if(Hash::check($request->mypassword, Auth::user()->password)){
                     $user = new User();
                     $user -> where('email', '=', Auth::user()->email)
                     ->update(['password' => bcrypt($request->password)]);
                     return back();
                 }
-            }
-
         //$user = User::findOrFail($id);
         //$user->email = $request->input('email');
         //$user->save();
@@ -192,7 +195,14 @@ class ProfileController extends Controller
         ->select('profiles.user_id','profiles.about', 'profiles.avatar', 'users.name', 'users.email', 'users.id')
         ->where('users.id', '=', $user_id)->get();
         //$profile = Profile::where('user_id', '=', $user_id)->get();
-        return view('profile.userprofile', compact('profile'));
+
+        $courses = DB::table('pagos')
+        ->join('courses', 'courses.id', '=', 'pagos.course_id')
+        ->join('users', 'users.id', '=', 'pagos.user_id')
+        ->select('courses.id','courses.path','courses.title', 'courses.description', 'users.name', 'users.id as user_id')
+        ->where('users.id', '=', $user_id)->paginate(6);
+
+        return view('profile.userprofile', compact('profile','courses'));
     }
 
 }

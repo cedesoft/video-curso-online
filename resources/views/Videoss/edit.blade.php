@@ -3,6 +3,22 @@
 @section('content')
 <div class="container">
     <h1>Modifica tu video</h1>
+    @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <strong> Error! </strong> Reviseloscampos
+            obligatorios.<br><br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+        @if(Session::has('success'))
+        <div class="alert alert-info">
+            {{Session::get('success')}}
+        </div>
+        @endif
     <form method="POST" action="{{ route('vide.update', $video->id) }}" role="form" enctype="multipart/form-data">
         {{ csrf_field() }}
         <input name="_method" type="hidden" value="PATCH">

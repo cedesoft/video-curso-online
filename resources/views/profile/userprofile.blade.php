@@ -3,6 +3,7 @@
 @section('content')
 
 <link rel="stylesheet" href="{{ asset('css/header_profile.css') }}">
+<link rel="stylesheet" href="{{ asset('css/Card.css') }}">
 <div class="row">
   <div class="headercontent">
     <div class="headerimage">
@@ -22,6 +23,27 @@
           <p class="text-muted text-left">{{$prof->about}}
           </p>
           <h6>Mis cursos comprados</h6>
+          <div class="row">
+            @if($courses->count())
+                  @foreach($courses as $course)
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+
+                <div class="card-header">
+                  <img src="{{asset('images/'.$course->path)}}" />
+                </div>
+                <div class="card-content">
+                  <h1>{{$course->title}}</h1>
+                  <p>{{$course->description}}</p>
+                <a href="{{route('coursedetail', $course->id)}}">Ver mas</a>
+                </div>
+
+              </div>
+            </div>
+
+            @endforeach
+            @endif
+            </div>
           @endforeach
           @endif
         </div>

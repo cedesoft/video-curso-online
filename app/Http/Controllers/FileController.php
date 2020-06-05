@@ -74,6 +74,8 @@ class FileController extends Controller
     public function update(Request $request, $id)
     {
         //
+       
+    $this->validate($request,['path'=>'required', 'title'=>'required']);
         if($request->hasFile('path')){
             $file = $request->file('path');
             $name = time().$file->getClientOriginalName();

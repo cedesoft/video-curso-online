@@ -66,7 +66,8 @@ Route::get('coursedetail/{id}', 'CourseController@info')->name('coursedetail');
 Route::post('calification','CourseController@calif')->name('calification');
 Route::get('paypal','paypalController@payWithPayPal');
 Route::get('paypal/status','paypalController@payPalStatus');
+Route::get('successfulPayPal','PaymentController@show');
 
-//Route::get('preguntasfrecuentes','preguntasfrecuentesController');
-//Route::get('terminosycondiciones','terminosycondicionesController');
+Route::get('/preguntasfrecuentes','preguntasfrecuentesController@show')->name('preguntasfrecuentes');
+Route::get('/terminosycondiciones','terminosycondicionesController@show')->name('terminosycondiciones');
 

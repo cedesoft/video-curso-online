@@ -46,47 +46,22 @@
                     </div>
                     <div class="card-content">
                         <h1>{{$course->title}}</h1>
-                        <span>Impartido por : Ramirez</span>
                         <p>{{$course->description}}</p>
-                        <a href="#">Ver mas</a>
-                        <a
-                            href="/add-to-cart/{{$course->id}}"
-                            name="btncarrito"
-                        >Añadir al carrito
-                        </a>
+                         <p class="precioCard">$ {{$course->actual_price}} MXN</p>
 
-
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
-                <div class="card-header">
-                    <div style="position:relative; top:30px; left:165px; display:inline-block;">
-                        <form action="{{action('FavoriteController@store')}}" method="post">
-                            {{ csrf_field() }}
-                            <input type="hidden" name="course_id" id="course_id" value="{{$course->id}}">
-                            <button style="background-color:transparent; border:transparent;filter: invert(0.6) sepia(1) hue-rotate(300deg);"><img width="30px" height="30px" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-512.png" alt=""></button>
-                        </form>
-
+                        <a href="{{route('coursedetail', $course->id)}} ">Ver mas</a>
+                         
+                        <div class="boton_card a">
+                        <a href="add-to-cart/{{$course->id}}"  >Añadir al carrito</a>
+                        </div>
                     </div>
-                    <img src="{{asset('images/'.$course->path)}}" />
+
                 </div>
-                <div class="card-content">
-                    <h1>{{$course->title}}</h1>
-                    <span>Impartido por : Ramirez</span>
-                    <p>{{$course->description}}</p>
-                    <a href="{{route('coursedetail', $course->id)}}">Ver mas</a>
-                    <a href="/add-to-cart/{{$course->id}}" name="btncarrito">Añadir al carrito
-                    </a>
-                </div>
+
             </div>
-        </div>
         @endif
-
-
         @endforeach
     </div>
     {{ $courses->links() }}
     @endif
-
-
-</div>
 @endsection

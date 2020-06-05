@@ -32,9 +32,10 @@
         </div>
         <div class="card-content">
           <h1>{{$curso->title}}</h1>
-          <span>Impartido por : </span>
+          <!--<span>Impartido por : </span>!-->
           <p>{{$curso->description}}</p>
-          <a href="{{route('coursedetail', $curso->id)}}">Ver mas</a><button class="">Añadir al carrito</button>
+          <a href="{{route('coursedetail', $curso->id)}}">Ver mas</a>
+          <!--<button >Añadir al carrito</button>!-->
         </div>
       </div>
     </div>

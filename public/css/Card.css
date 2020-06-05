@@ -1,5 +1,5 @@
 .card {
-  
+
     width: 250px;
     height: 350px;
     background: #00000000;
@@ -34,7 +34,7 @@
     width: 90px;
     height: 30px;
     padding: 25px;
-  
+
     font-family: Montserrat;
     font-size: 12px;
     text-align: center;
@@ -45,4 +45,42 @@
     color: #102749;
     text-decoration: none;
   }
-  
+
+  .precioCard{
+position: relative;
+width: 950%;
+height: 10px;
+left: 140px;
+top: 10px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: left;
+color: #FF7B7B;
+  }
+
+   .boton_card a{
+       position: relative;
+       width: 50%;
+       padding-top: 4px;
+       padding-bottom: 5px;
+       left:85px;
+       top: -20px;
+
+
+  }
+  .boton_card a{
+    background-color: #116597;
+    border-radius: 25px;
+    color: white;
+    font-size: 14px;
+  }
+
+
+
+
+

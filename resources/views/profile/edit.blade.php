@@ -20,6 +20,22 @@
       <p>Usuario desde Febrero de 2019</p>
     </div>
     <div class="container">
+    @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <strong> Error! </strong> Reviseloscampos
+            obligatorios.<br><br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+        @if(Session::has('success'))
+        <div class="alert alert-info">
+            {{Session::get('success')}}
+        </div>
+        @endif
       <div class="row">
         <div class="col-12">
           <div class="form1">
